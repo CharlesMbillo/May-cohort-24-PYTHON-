@@ -1,0 +1,50 @@
+# Get user input to create a list of integers
+numbers = input("Enter a list of integers separated by spaces: ")
+numbers_list = [int(num) for num in numbers.split()]
+
+# Compute the sum of all the integers in the list
+sum_of_numbers = sum(numbers_list)
+
+print("The sum of the integers in the list is:", sum_of_numbers)
+
+# Create a tuple containing the names of five favorite books
+favorite_books = ("To Kill a Mockingbird", "The Great Gatsby", "Pride and Prejudice", "The Catcher in the Rye", "1984")
+
+# Use a for loop to print each book name on a separate line
+for book in favorite_books:
+    print(book)
+
+# Ask the user for input to store in a dictionary
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+favorite_color = input("Enter your favorite color: ")
+
+# Create a dictionary to store the person's information
+person_info = {"name": name, "age": age, "favorite_color": favorite_color}
+
+# Print the dictionary to the console
+print("Person Information:")
+print(person_info)
+
+
+
+# Get user input to create two sets of integers
+set1_input = input("Enter the first set of integers separated by spaces: ")
+set2_input = input("Enter the second set of integers separated by spaces: ")
+
+set1 = set([int(num) for num in set1_input.split()])
+set2 = set([int(num) for num in set2_input.split()])
+
+# Create a new set that contains only the elements that are common to both sets
+common_elements = set1 & set2
+
+print("The common elements in both sets are:", common_elements)
+
+
+# Store a list of words
+words = ["hello", "world", "python", "programming", "code", "fun"]
+
+# Use list comprehension to create a new list that contains only the words with an odd number of characters
+odd_length_words = [word for word in words if len(word) % 2 != 0]
+
+print("The words with an odd number of characters are:", odd_length_words)
